@@ -39,8 +39,8 @@ section#login {
     overflow: hidden;
 
     background-color: white;
-    height: 500px;
     width: 320px;
+    height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.373);
 
@@ -64,12 +64,64 @@ section#login > div#form {
 div#form > h1 {
     text-align: center;
     font-family: var(--font2);
-    padding: 10px;
+    padding: 5px;
 }
 
 div#form > p {
     text-align: center;
     font-family: var(--font1);
     font-size: 1em;
-    padding: 10px;
+    padding: 5px;
+}
+
+form > div.campo {
+    background-color: var(--cor1);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #3f5e66;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #97cedc;
+    color: #3f5e66;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #3f5e66;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #97cedc;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
 }
