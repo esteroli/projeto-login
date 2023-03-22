@@ -11,13 +11,22 @@
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="imagens/img-bit-pq.jpg" alt="Moça com 'bit' no rosto">
+            </div>
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) de volta. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
-                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" autocomplete="email" id="name" required>
+                    <br>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" minlength="8" required>
                 </form>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
             </div>
         </section>
     </main>
